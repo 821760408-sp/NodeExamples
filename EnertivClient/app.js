@@ -47,13 +47,10 @@ app.get('/client', function (req,res){
 	var apiClient = c.apiCall('/api/client/', function (apiClient){
 		var clientInfo = JSON.parse(apiClient);
 		clientData.uuid = clientInfo[0].id;
-	    clientData.locationID = clientInfo[0].locations[0];
+    clientData.locationID = clientInfo[0].locations[0];
 		res.send(clientData);
 	});
-	
 });
-
-
 
 // Example showing top 10 energy consumers
 // Uses the client uuid we saved from '/client'
@@ -69,7 +66,6 @@ app.get('/getTop', function (req,res){
 		res.end();
 	});
 });
-
 
 // Get energy and cost data by location
 // Uses the location uuid we saved from '/client'

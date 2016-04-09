@@ -11,5 +11,5 @@ EnertivClient/cred.js
 EnertivClient/node_modules/*
 EnertivClient/requestVersion/cred.js
 EnertivClient/requestVersion/node_modules/*
-.DS_Store
 **/.DS_Store
+
